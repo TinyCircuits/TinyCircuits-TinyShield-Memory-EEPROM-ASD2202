@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -63,6 +63,11 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -71,6 +76,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -84,6 +90,9 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="tGTest" color="4" fill="1" visible="no" active="no"/>
 <layer number="112" name="bGTest" color="1" fill="1" visible="no" active="no"/>
+<layer number="113" name="HENWAY_PKG" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="50_Electronics_Plate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="henwayRES" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
@@ -121,6 +130,13 @@
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="mbDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="156" name="bCapacitor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="157" name="tResistor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="158" name="bResistor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="159" name="henwayCAP" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
@@ -153,6 +169,9 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
@@ -4537,8 +4556,8 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
 <circle x="-3.8" y="3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
@@ -4584,6 +4603,18 @@
 <rectangle x1="2.1378" y1="1.2066" x2="2.3578" y2="2.5066" layer="31"/>
 <rectangle x1="2.6378" y1="1.2066" x2="2.8578" y2="2.5066" layer="31"/>
 <rectangle x1="3.1378" y1="1.2066" x2="3.3578" y2="2.5066" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="DF12-32-DP">
 <description>Hirose DF12 Pattern with metal fitting, 32 positions</description>
@@ -4659,8 +4690,8 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
 <circle x="-3.8" y="-3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
@@ -4706,6 +4737,18 @@
 <rectangle x1="2.6378" y1="-2.5034" x2="2.8578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.1378" y1="-2.5034" x2="3.3578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.6378" y1="-2.5034" x2="3.8578" y2="-1.2034" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="DOCFIELD-TINYCIRCUITS-PCB">
 <wire x1="0.04318125" y1="0.034290625" x2="17.82318125" y2="0.034290625" width="0.127" layer="48"/>
@@ -14826,7 +14869,7 @@
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1854" width="0.1524" layer="21"/>
 <wire x1="0.6326" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
 <smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<text x="0" y="0" size="0.4572" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-1.1786" y1="0.7112" x2="-0.7214" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
@@ -15120,10 +15163,12 @@ design rules under a new name.</description>
 <element name="U1" library="tinycircuits" package="SOT-25" value="XC6217A332MR-G" x="27.9" y="18.6">
 <attribute name="PARTNO" value="AS-ITM-00249" x="27.9" y="18.6" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="XC6217A33" x="27.9" y="18.6" size="1.778" layer="27" display="off"/>
+<attribute name="PNPROTATION" value="270" x="27.9" y="18.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U4" library="tinycircuits" package="UQFN-12" value="TXB0104" x="19" y="20.1" rot="R180">
 <attribute name="PARTNO" value="AS-ITM-00048" x="19" y="20.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="TXB0104" x="19" y="20.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PNPROTATION" value="0" x="19" y="20.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R8" library="tinycircuits" package="0402" value="1.00K" x="16.9" y="27.8">
 <attribute name="PARTNO" value="AS-ITM-00003" x="16.9" y="27.8" size="0.7" layer="27" display="off"/>
@@ -15179,6 +15224,7 @@ design rules under a new name.</description>
 <element name="U5" library="tinycircuits" package="8-SOIC-N" value="W25Q80DVSNIG, MB85RS1MTPNF, 23LC1024T" x="16" y="24.45" rot="R270">
 <attribute name="PARTNO" value="AS-ITM-00238" x="16" y="24.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="W25Q40BVSNIG" x="16" y="24.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PNPROTATION" value="90" x="16" y="24.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>

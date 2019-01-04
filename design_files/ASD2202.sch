@@ -63,6 +63,11 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -71,6 +76,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -84,7 +90,14 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="HENWAY_PKG" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="50_Electronics_Plate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="henwayRES" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -93,11 +106,43 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="156" name="bCapacitor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="157" name="tResistor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="158" name="bResistor" color="7" fill="1" visible="no" active="yes"/>
+<layer number="159" name="henwayCAP" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -124,11 +169,15 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="PART_" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -209,8 +258,8 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
 <circle x="-3.8" y="3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
@@ -256,6 +305,18 @@
 <rectangle x1="2.1378" y1="1.2066" x2="2.3578" y2="2.5066" layer="31"/>
 <rectangle x1="2.6378" y1="1.2066" x2="2.8578" y2="2.5066" layer="31"/>
 <rectangle x1="3.1378" y1="1.2066" x2="3.3578" y2="2.5066" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="DF12-32-DP">
 <description>Hirose DF12 Pattern with metal fitting, 32 positions</description>
@@ -331,8 +392,8 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
 <circle x="-3.8" y="-3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
@@ -378,6 +439,18 @@
 <rectangle x1="2.6378" y1="-2.5034" x2="2.8578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.1378" y1="-2.5034" x2="3.3578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.6378" y1="-2.5034" x2="3.8578" y2="-1.2034" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="C0402">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -412,7 +485,7 @@
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1854" width="0.1524" layer="21"/>
 <wire x1="0.6326" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
 <smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<text x="0" y="0" size="0.4572" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-1.1786" y1="0.7112" x2="-0.7214" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
@@ -11052,6 +11125,7 @@
 <technologies>
 <technology name="">
 <attribute name="PARTNO" value="AS-ITM-00249" constant="no"/>
+<attribute name="PNPROTATION" value="270" constant="no"/>
 <attribute name="VALUE" value="XC6217A33" constant="no"/>
 </technology>
 </technologies>
@@ -11082,6 +11156,7 @@
 <technologies>
 <technology name="">
 <attribute name="PARTNO" value="AS-ITM-00048" constant="no"/>
+<attribute name="PNPROTATION" value="0" constant="no"/>
 <attribute name="VALUE" value="TXB0104" constant="no"/>
 </technology>
 </technologies>
@@ -11174,6 +11249,7 @@
 <technologies>
 <technology name="">
 <attribute name="PARTNO" value="AS-ITM-00238" constant="no"/>
+<attribute name="PNPROTATION" value="90" constant="no"/>
 <attribute name="VALUE" value="W25Q40BVSNIG" constant="no"/>
 </technology>
 </technologies>
@@ -11326,6 +11402,16 @@
 <text x="170.18" y="203.2" size="2.032" layer="94" font="vector">(R2/R3 populated)</text>
 <text x="86.36" y="177.8" size="2.032" layer="94" font="vector">Note: Not populated on EEPROM boards</text>
 <text x="180.34" y="81.28" size="2.032" layer="94" font="vector">Note: Not populated on EEPROM boards</text>
+<text x="53.34" y="58.42" size="1.778" layer="96">Non Populated: C1, C2, C3, R1, R4, R5, R6, R8, R9, U1, U4, U5</text>
+<text x="53.34" y="55.88" size="1.778" layer="96">Hand Populated: -</text>
+<text x="53.34" y="53.34" size="1.778" layer="96">Hand Soldered: -</text>
+<text x="53.34" y="60.96" size="1.778" layer="96">Variant: EEPROM -R-E</text>
+<text x="53.34" y="50.8" size="1.778" layer="96">Notes: -</text>
+<text x="149.86" y="58.42" size="1.778" layer="96">Non Populated: R1, R2, R3, R4, R6, U2</text>
+<text x="149.86" y="55.88" size="1.778" layer="96">Hand Populated: -</text>
+<text x="149.86" y="53.34" size="1.778" layer="96">Hand Soldered: -</text>
+<text x="149.86" y="60.96" size="1.778" layer="96">Variant: FLASH -R-F</text>
+<text x="149.86" y="50.8" size="1.778" layer="96">Notes: -</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="337.82" y="106.68">
