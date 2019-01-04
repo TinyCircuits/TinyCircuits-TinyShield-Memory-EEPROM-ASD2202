@@ -1,15 +1,15 @@
 # TinyCircuits TinyShield Memory Board
 # ASD2202 Rev3
 
-These are the design files for the TinyCircuits ASD2202 Rev 3 PCB.  This is a TinyShield board (20mm x 20mm) that has options for several different memory ICs.
+The design files are located under design_files/ for the TinyCircuits ASD2202 Rev 3 PCB.  This is a TinyShield board (20mm x 20mm) that has options for several different memory ICs.
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
-For more infomation on this, check out the product page at Tiny-Circuits.com:  https://tinycircuits.com/products/eeprom-tinyshield
+For more infomation on this, check out the product page at TinyCircuits.com:  https://tinycircuits.com/products/eeprom-tinyshield
 
 
 
-#License:
+# License:
 
 Design by TinyCircuits.
 All design files are released under the Creative Commons Attribution Share-Alike 3.0 License, see the following link for details: http://creativecommons.org/licenses/by-sa/3.0
