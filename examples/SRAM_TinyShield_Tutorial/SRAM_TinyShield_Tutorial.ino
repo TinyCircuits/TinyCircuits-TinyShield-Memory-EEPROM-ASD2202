@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------------
 //  TinyCircuits SRAM Example Sketch
-//  Last Updated 23 February 2018
+//  Last Updated 2 July 2018
 //
 //  This sketch writes a string of text to a specifice memory address, reads the
 //  text back from memory, then prints the text to demonstrates some functions of
@@ -43,5 +43,3 @@ void loop() {
   SerialMonitorInterface.println(buf);
   delay(500);
 }
-
-
