@@ -1,17 +1,20 @@
-//-----------------------------------------------------------------------------------
-//  TinyCircuits SRAM Example Sketch
-//  Last Updated 2 July 2018
-//
-//  This sketch writes a string of text to a specifice memory address, reads the
-//  text back from memory, then prints the text to demonstrates some functions of
-//  the TinyCircuits SRAM Tinyshield, which uses the Microchip 23LC1024 SRAM
-//  memory module.
-//
-//  Library written by ennui2342 on github https://github.com/ennui2342/arduino-sram
-//
-//  Example Written by Nick DiVitto for TinyCircuits http://Tinycircuits.com
-//
-//-----------------------------------------------------------------------------------
+/*
+  TinyCircuits SRAM Example Sketch
+  
+  This sketch writes a string of text to a specifice memory address, reads the
+  text back from memory, then prints the text to demonstrates some functions of
+  the TinyCircuits SRAM Tinyshield, which uses the Microchip 23LC1024 SRAM
+  memory module.
+
+  Library written by ennui2342 on github https://github.com/ennui2342/arduino-sram
+
+  Written 02 July 2018
+  By Nick DiVitto
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 #include <SRAM.h>
 #include <SPI.h>
