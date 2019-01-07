@@ -31,6 +31,9 @@ const int flashCS = 5; // The chip/slave select pin is pin 5.
 SPIFlash flash(flashCS); // The SPIFlash object for the chip. Passed the chip select pin in the constructor.
 uint16_t page; // The page to be written to. (Page value MUST be type uint16_t)
 uint8_t offset; // The specific location on the page. (Offset value MUST be type uint8_t)
+uint32_t address; // The specific address in memory to be written to. (Address value MUST be type uint32_t)
+const bool errorCheck = true; // A boolean parameter used to check for writing errors. Turned on by default.
+const bool fastRead = false; // A boolean parameter used to implement a fast read function. Defaults to false.
 
 void setup() {
   SerialMonitor.begin(115200);
@@ -44,15 +47,16 @@ void setup() {
 
   page = random(0, 4095); // The W25Q80DV has 4,096 writeable pages, referenced as 0-4095 in this library.
   offset = random(0, 255); // There are 256 individually addressable bytes per page, referenced 0-255.
-
+  address = (page * 255) - (255 - offset); // Calculates the proper address given the page and offset.
   /* Writing/Reading a byte */
   SerialMonitor.println("Using writeByte...");
-  uint8_t testByte = 8;
-  // writeByte(page, offset, byte) - returns true if successful
-  // page: int 0-4095
-  // offset: int 0-255
-  // byte: uint8_t or byte type data
-  if(flash.writeByte(page, offset, testByte)) { 
+  uint8_t testByte = 8; // Byte data to be written to flash memory
+  flash.eraseSector(address); // Must erase memory before writing per datasheet.
+  // writeByte(address, testByte, errorCheck) - returns true if successful
+  // address: int 0-(4095*255)
+  // testByte: uint8_t or byte type data
+  // errorCheck: bool
+  if(flash.writeByte(address, testByte, errorCheck)) { 
     SerialMonitor.println("Write successful!");
   }
   else {
@@ -62,8 +66,8 @@ void setup() {
   char printBuffer[50]; // for formatting the random values, using sprintf
   sprintf(printBuffer, "The byte on page %d at position %d is: ", page, offset);
   SerialMonitor.print(printBuffer);
-  // readByte(page, offset)
-  SerialMonitor.println(flash.readByte(page, offset)); // This should read 8 on the serial monitor.
+  // readByte(address, fastRead)
+  SerialMonitor.println(flash.readByte(address, fastRead)); // This should read 8 on the serial monitor.
 
 }
 
