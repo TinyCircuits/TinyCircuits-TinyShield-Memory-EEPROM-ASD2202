@@ -10,7 +10,7 @@
 
   Written 02 July 2018
   By Nick DiVitto
-  Modified 07 January 2019
+  Modified 09 January 2019
   By Hunter Hykes
 
   https://TinyCircuits.com
@@ -38,11 +38,11 @@ void setup() {
 
 void loop() {
   char test [] = "hello, world";
-  sram.seek(1);
-  sram.write((byte *) test, sizeof(test));
+  sram.seek(1); //Goes to address '1' within SRAM
+  sram.write((byte *) test, sizeof(test)); //writes the contents of test to SRAM at the previously specified address
   char buf[20];
-  sram.seek(1);
-  sram.readBytes((char *) buf, sizeof(buf));
+  sram.seek(1); //Goes to address '1' within SRAM
+  sram.readBytes((char *) buf, sizeof(buf)); //reads the contents of SRAM at the previously specified address to buf
   SerialMonitorInterface.println(buf);
   delay(500);
 }
