@@ -1,5 +1,5 @@
 # TinyCircuits TinyShield EEPROM / Flash / SRAM Memory Board
-# ASD2202 Rev3
+## ASD2202 Rev3
 
 The design files are located under design_files/ for the TinyCircuits ASD2202 Rev 3 PCB.  This is a TinyShield board (20mm x 20mm) that has options for several different memory ICs.
 
