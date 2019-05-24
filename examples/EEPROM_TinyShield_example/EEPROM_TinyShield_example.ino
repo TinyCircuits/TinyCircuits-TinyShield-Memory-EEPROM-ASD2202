@@ -29,6 +29,7 @@
 void setup() {
   Wire.begin();
   SerialMonitor.begin(115200);
+  while(!SerialMonitor); // Halts program until Serial Monitor is opened
   SerialMonitor.println("Writing..");
   char writeData[]="TinyCircuits!";
   EEPROMwrite(0,(uint8_t*)writeData,sizeof(writeData));
@@ -40,6 +41,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+//  SerialUSB.print("test");
 
 }
 
