@@ -2,7 +2,7 @@
   TinyCircuits Flash Memory TinyShield Example Sketch
   
   This is an example of how to write to and read data from the Winbond W25Q80DV
-  I2C Flash Memory using the SPIFlash library. Whole page write functions are
+  Flash Memory chip using the SPIFlash library. Whole page write functions are
   not used. This example will specifically be using the writeByte/readByte
   functions. Documentation on functions for other data types can be found on
   the library's Github page.
