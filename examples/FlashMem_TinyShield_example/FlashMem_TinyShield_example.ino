@@ -47,7 +47,7 @@ void setup() {
 
   page = random(0, 4095); // The W25Q80DV has 4,096 writeable pages, referenced as 0-4095 in this library.
   offset = random(0, 255); // There are 256 individually addressable bytes per page, referenced 0-255.
-  address = (page * 255) - (255 - offset); // Calculates the proper address given the page and offset.
+  address = ((page+1) * 255) - (255 - offset); // Calculates the proper address given the page and offset.
   /* Writing/Reading a byte */
   SerialMonitor.println("Using writeByte...");
   uint8_t testByte = 8; // Byte data to be written to flash memory
